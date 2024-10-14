@@ -1,0 +1,204 @@
+/* General Style */
+body {
+    margin:20px;
+    background-color: rgb(233, 229, 195);
+}
+
+/* Style of h1 */
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+    color: #c58a09;
+    margin-top: 20px;
+}
+
+/*Style h2 */
+h2 {
+    color: #150c3f;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Style P tag */
+p {
+    font-weight: bold;
+    color: #25156b;
+    font-size: 22px; 
+    font-family: Bookman, URW Bookman L, serif;
+    margin: 10px 0;
+    margin-left: 30px;
+}
+
+/* Set and style the the header background image */
+.Background-Img {
+    background-image: url(background.avif);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+/* Style the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+/* Style logo nav class */
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+/* Height of logo */
+header img {
+    height: 60px;
+}
+
+/* Styling Navegation bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #150c3f;
+    font-size: 1.2em;
+
+
+}
+
+/* Styling schedule section (the table) */
+#schedule {
+    margin: 20px 0;
+}
+
+#schedule table {
+    width: 100%;
+    border-collapse: collapse ;
+    background-color: #ebe3a3;
+}
+
+
+#schedule th, #schedule td {
+    border: 2px solid ;
+    text-align: center;
+    padding: 10px;
+    color: #25156b;
+}
+
+/* Styling photo section (Photo Gallery) */
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activities img {
+    width: 580px;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+/* Styling h4 in announce section (Announcement) */
+h4 {
+    border: 5px solid red;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 20px;
+    color: #25156b;
+    font-family:  Bookman, URW Bookman L, serif;
+    font-size: 25px;
+}
+
+/* Styling info section (Information )*/
+#info ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#info li {
+    flex: 0 0 24%;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 1.1em;
+    color: #25156b;
+}
+
+#info strong {
+    margin-bottom: 3px;
+    font-size: larger;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(230, 219, 121);
+    padding: 5px 0;
+    color: #150c3f;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Stying the page to responsive for both mobile and desktop views */
+@media (max-width: 768px) {
+    /* Mobile Header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+
+    .activities img {
+        width: 100%; 
+    }
+
+    #info li {
+        flex: 0 0 48%; 
+    }
+}
